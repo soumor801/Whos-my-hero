@@ -2,8 +2,16 @@
 
 
 
+  let submitButton = document.querySelector('.search-submit');
+  submitButton.addEventListener('click', () => {
+    console.log('clicked'); 
+    
+    const inputData = document.querySelector('.search-input').value;
 
-const fetchData = (superHero) => {
+    document.querySelector('.search-input').value = ''
+
+
+// const fetchData = (superHero) => {
 fetch("https://superhero-search.p.rapidapi.com/api/heroes", {
 	"method": "GET",
 	"headers": {
@@ -12,25 +20,21 @@ fetch("https://superhero-search.p.rapidapi.com/api/heroes", {
   }
 })
 .then((superHero) => {
-  console.log(response.json);
-  return superHero.json();
-}).then((superHero.json) => {
-  showSuperHero(superHero.json);})
-
-//   => {
-  //   
-  //    
+  console.log(superHero.json);
+  return superHero.json()
+})
+  .then((superHeroJSON) => {
+    console.log(superHeroJSON)
+    showSuperHero(superHeroJSON);
+  })
   .catch((err) => {
 	console.error(err);
 });
 
 }
-const submitButton = document.querySelector('.search-submit');
-submitButton.addEventListener('click', (ev) => {
-  console.log('clicked');
-  const inputData = document.querySelector('.search-input').value;
-
-  fetchData(inputData);
-
-  document.querySelector('.search-input').value = '';
-})
+)
+const showSuperHero = () => {
+  
+}
+  
+  
