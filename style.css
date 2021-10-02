@@ -1,21 +1,76 @@
 html {
-  background-color: #016ABC;
+  background-color: ;
 }
 
 
 .search-submit {
-  background:#B9DFFF;
+  background: #007E9A;
   color:#fff;
-  border:1pxsolid#eee;
+  border: 3px solidrgb(0, 0, 0);
   border-radius:20px;
-  box-shadow:5px5px5px#eee;
+  box-shadow:5px5px5pxrgb(0, 0, 0);
   text-shadow:none;
+  margin-left: 10px;
+  
 }
-.search-submit {
-  background:#016ABC;
-  color:#fff;
-  border:1pxsolid#eee;
-  border-radius:20px;
-  box-shadow:5px5px5px#eee;
-  text-shadow:none;
+
+
+.header {
+  font-family: Share Tech Mono;
+  background-color: #007E9A;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  align-items: center;  
+  margin: 0 auto;
+  width: ;
+}
+h1 {
+  font-size: 40px;
+}
+
+h2{
+  font-size: 15px;
+}
+
+
+.container {
+height: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+
+
+.footer p{
+  font-family: Share Tech Mono;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.super {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 75px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+img {}
+
+.search-submit:hover {
+background-color: #007e9abf;
+}
+
+.search-submit:active {
+  background-color: #007E9A;
+  box-shadow: 0 3px #666;
+  transform: translateY(1px);
 }
