@@ -9,7 +9,8 @@ const inputData = () => {
   let submitButton = document.querySelector('.search-submit');
   submitButton.addEventListener('click', (superheroName) => {
     console.log('clicked'); 
-    
+    let imgSuper = document.querySelector('.super');
+   
     
 
 

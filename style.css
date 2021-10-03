@@ -62,7 +62,7 @@ justify-content: center;
   justify-content: space-evenly;
   margin: 0 auto;
   animation-name: floating;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
    
@@ -73,7 +73,7 @@ justify-content: center;
   50%  { transform: translate(0, 15px); }
   100%   { transform: translate(0, -0px); }   
 }
-.search-submit:hover {
+.search-submit .super:hover {
 background-color: #007e9abf;
 }
 
