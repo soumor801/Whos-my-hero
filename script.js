@@ -1,21 +1,19 @@
 //============================ Superhero API call =========================
 
-const inputData = () => {
-  let superheroName = document.querySelector('.search-input').value;
-  console.log(superheroName);
-  document.querySelector('.search-input').value = ''
-}
+
 
   let submitButton = document.querySelector('.search-submit');
-  submitButton.addEventListener('click', (superheroName) => {
+  submitButton.addEventListener('click', () => {
     console.log('clicked'); 
     let imgSuper = document.querySelector('.super');
    
-    
+    let superheroName = document.querySelector('.search-input').value;
+  console.log(superheroName);
+
+  document.querySelector('.search-input').value = ''
 
 
-// const fetchData = (superHero) => {
-fetch("https://superhero-search.p.rapidapi.com/api/heroes", {
+fetch(`https://superhero-search.p.rapidapi.com/api/?hero=${superheroName}`, {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "superhero-search.p.rapidapi.com",
@@ -24,22 +22,15 @@ fetch("https://superhero-search.p.rapidapi.com/api/heroes", {
 })
 .then((superHero) => {
   console.log(superHero.json);
-  return superHero.json(inputData)
+  return superHero.json()
 })
-  // .then((superHeroJSON) => {
-  //   console.log(superHeroJSON)
-  //   showSuperHero(superHeroJSON);
-  // })
+  
   .then((superHeroJSON) => {
     console.log(superHeroJSON);
     let randomUser = superHeroJSON.name;
     console.log(superHeroJSON.results[0].name);
-   
-   
-   
-    // randomUser = document.createElement('div');
     
-    // document.appendChild(randomUser);
+    
   })
   .catch((err) => {
 	console.error(err);
@@ -49,6 +40,9 @@ fetch("https://superhero-search.p.rapidapi.com/api/heroes", {
 )
 const showSuperHero = () => {
   
+  randomUser = document.createElement('div');
+    randomUser.
+    document.appendChild(randomUser);
 }
   
   
