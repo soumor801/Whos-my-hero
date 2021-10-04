@@ -44,36 +44,46 @@ submitButton.addEventListener("click", () => {
 
 const showSuperHero = (superHeroData) => {
   console.log(superHeroData);
-  const superHeroName = document.createElement("h2");
-  superHeroName.innerHTML = '';
-
-  const superHeroImg = document.createElement("img");
-  superHeroImg.innerHTML = '';
-
-  const superHeroBio = document.createElement("p");
-  superHeroBio.innerHTML = '';
-
-  const superHeroPowerStats = document.createElement("p");
-  superHeroPowerStats.innerHTML = '';
-
-  const superHeroJob = document.createElement("p");
-  superHeroJob.innerHTML = '';
-  
-  
-  superHeroName.innerText = superHeroData.name;
-  superHeroBio.innerText = superHeroData.biography.fullName;
-  superHeroImg.src = superHeroData.images.md;
-  superHeroPowerStats.innerText =
-    superHeroData.connections.groupAffiliation;
-  superHeroJob.innerText = superHeroData.work.occupation;
   
 
+  // const superHeroName = document.createElement("h2");
   
-  document.querySelector(".superhero-name").append(superHeroName);
+
+  // const superHeroImg = document.createElement("img");
+  // superHeroImg.innerHTML = '';
+
+  // const superHeroBio = document.createElement("p");
+  // superHeroBio.innerHTML = '';
+
+  // const superHeroPowerStats = document.createElement("p");
+  // superHeroPowerStats.innerHTML = '';
+
+  // const superHeroJob = document.createElement("p");
+  // superHeroJob.innerHTML = '';
+  
+  
+  document.querySelector('.superhero-name').innerText = `${superHeroData.name}`;
+  
+  document.querySelector('.superhero-body').innerText = `${superHeroData.biography.fullName}`;
+  
+  document.querySelector('.superhero-img').innerText = `${superHeroData.images.md}`;
+  
+  document.querySelector('.superhero-p').innerText = `${superHeroData.connections.groupAffiliation}`;
+  
+  document.querySelector('.superhero-stats').innerText = `${superHeroData.work.occupation}`;
+
+  // superHeroImg.src = superHeroData.images.md;
+  // superHeroPowerStats.innerText =
+  // ;
+  // superHeroJob.innerText = superHeroData.work.occupation;
+  
+
+  
+  
   document.querySelector(".superhero-p").append(superHeroBio);
   document.querySelector(".superhero-img").append(superHeroImg);
   document.querySelector(".superhero-stats").append(superHeroPowerStats);
   document.querySelector(".superhero-job").append(superHeroJob);
-
+  document.querySelector(".superhero-name").append(superHeroName);
 
 };
