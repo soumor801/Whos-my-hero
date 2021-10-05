@@ -60,19 +60,23 @@ const showSuperHero = (superHeroData) => {
 
   // const superHeroJob = document.createElement("p");
   // superHeroJob.innerHTML = '';
+  // superHeroImg.src = superHeroData.images.md;
   
   
   document.querySelector('.superhero-name').innerText = `${superHeroData.name}`;
+  console.log(superHeroData)
   
-  document.querySelector('.superhero-body').innerText = `${superHeroData.biography.fullName}`;
+  document.querySelector('#superhero-body').innerText = `${superHeroData.biography.fullName}`;
+  console.log(superHeroData)
   
-  document.querySelector('.superhero-img').innerText = `${superHeroData.images.md}`;
+  document.querySelector('.superhero-img').src = superHeroData.images.lg;
+  
+  console.log(superHeroData.images.md)
   
   document.querySelector('.superhero-p').innerText = `${superHeroData.connections.groupAffiliation}`;
   
   document.querySelector('.superhero-stats').innerText = `${superHeroData.work.occupation}`;
 
-  // superHeroImg.src = superHeroData.images.md;
   // superHeroPowerStats.innerText =
   // ;
   // superHeroJob.innerText = superHeroData.work.occupation;
@@ -80,10 +84,10 @@ const showSuperHero = (superHeroData) => {
 
   
   
-  document.querySelector(".superhero-p").append(superHeroBio);
-  document.querySelector(".superhero-img").append(superHeroImg);
-  document.querySelector(".superhero-stats").append(superHeroPowerStats);
-  document.querySelector(".superhero-job").append(superHeroJob);
-  document.querySelector(".superhero-name").append(superHeroName);
+  // document.querySelector(".superhero-p").append(superHeroBio);
+  // document.querySelector(".superhero-img").append(superHeroImg);
+  // document.querySelector(".superhero-stats").append(superHeroPowerStats);
+  // document.querySelector(".superhero-job").append(superHeroJob);
+  // document.querySelector(".superhero-name").append(superHeroName);
 
 };

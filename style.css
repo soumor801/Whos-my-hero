@@ -1,5 +1,5 @@
 html {
-  background-color: ;
+  
 }
 
 
@@ -24,7 +24,7 @@ html {
   height: 170px;
   align-items: center;  
   margin: 0 auto;
-  width: ;
+  
 }
 h1 {
   font-size: 40px;
@@ -40,11 +40,11 @@ h2 {
 } 
 
 
-img  {
+/* img  {
   display: flex;
   align-items: center;
   margin: 0 auto;
-}
+} */
 
 .container {
 height: 300px;
@@ -53,6 +53,8 @@ align-items: center;
 justify-content: center;
 
 }
+
+
 
 .search-input {
   display: flex;
@@ -90,11 +92,12 @@ justify-content: center;
   100%   { transform: translate(0, -0px); }   
 }
 
-/* p {
+p, #superhero-body{
   display: flex;
   align-items: center;
   margin: 0 auto;
-}  */
+  font-family: Share Tech Mono;
+} 
 
 .search-submit .super:hover {
 background-color: #007e9abf;
