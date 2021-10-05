@@ -23,8 +23,8 @@ submitButton.addEventListener("click", () => {
 
     .then((superHeroJSON) => {
       console.log(superHeroJSON);
-      let superHero = superHeroJSON
-      
+      let superHero = superHeroJSON;
+
       // superheroArr = Object.entries(superHero);
       // superheroStats = Object.entries(superHero.powerstats)
       // superheroBio = Object.entries(superHero.biography)
@@ -44,50 +44,67 @@ submitButton.addEventListener("click", () => {
 
 const showSuperHero = (superHeroData) => {
   console.log(superHeroData);
-  
 
-  // const superHeroName = document.createElement("h2");
-  
+  document.querySelector(".superhero-name").innerText = `${superHeroData.name}`;
+  console.log(superHeroData);
 
-  // const superHeroImg = document.createElement("img");
-  // superHeroImg.innerHTML = '';
+  document.querySelector(
+    "#superhero-body"
+  ).innerText = `${superHeroData.biography.fullName}`;
+  console.log(superHeroData);
 
-  // const superHeroBio = document.createElement("p");
-  // superHeroBio.innerHTML = '';
+  document.querySelector(".superhero-img").src = superHeroData.images.lg;
 
-  // const superHeroPowerStats = document.createElement("p");
-  // superHeroPowerStats.innerHTML = '';
+  console.log(superHeroData.images.md);
 
-  // const superHeroJob = document.createElement("p");
-  // superHeroJob.innerHTML = '';
-  // superHeroImg.src = superHeroData.images.md;
-  
-  
-  document.querySelector('.superhero-name').innerText = `${superHeroData.name}`;
-  console.log(superHeroData)
-  
-  document.querySelector('#superhero-body').innerText = `${superHeroData.biography.fullName}`;
-  console.log(superHeroData)
-  
-  document.querySelector('.superhero-img').src = superHeroData.images.lg;
-  
-  console.log(superHeroData.images.md)
-  
-  document.querySelector('.superhero-p').innerText = `${superHeroData.connections.groupAffiliation}`;
-  
-  document.querySelector('.superhero-stats').innerText = `${superHeroData.work.occupation}`;
+  document.querySelector(
+    ".superhero-p"
+  ).innerText = `${superHeroData.connections.groupAffiliation}`;
 
-  // superHeroPowerStats.innerText =
-  // ;
-  // superHeroJob.innerText = superHeroData.work.occupation;
-  
-
-  
-  
-  // document.querySelector(".superhero-p").append(superHeroBio);
-  // document.querySelector(".superhero-img").append(superHeroImg);
-  // document.querySelector(".superhero-stats").append(superHeroPowerStats);
-  // document.querySelector(".superhero-job").append(superHeroJob);
-  // document.querySelector(".superhero-name").append(superHeroName);
-
+  document.querySelector(
+    ".superhero-stats"
+  ).innerText = `${superHeroData.work.occupation}`;
 };
+// ===========================================================
+
+function prop(min, max) {
+  var rand = Math.floor(Math.random() * (max - min + 1)) + min;
+  return rand = rand+"%";
+}
+
+function spawnSphere() {
+  var top = prop(30, 70);
+  var left = prop(30, 70);
+  console.log(top, left);
+  var $sphere = '<div class="sphere"></div>';
+  $("body").append( $sphere ).find(".sphere:last").animate({
+    top: top,
+    left: left,
+    opacity: 0
+  }, 4000, function(){
+    $("body").find(".sphere:first").remove();
+  });
+}
+
+setInterval("spawnSphere()", 500);
+// let stop = setInterval("spawnSphere()", 500);
+
+
+
+
+// function stopLoad() {
+//   clearInterval(stop)
+
+// }
+// setTimeout(() => {
+//   stopLoad();
+// },1000);
+
+
+
+// setTimeout(() => {
+//   document.querySelector('.sphere').style.display = 'none'
+// }, 1000)
+// $(window).load(function () {
+//   $(".blip").fadeOut("slow");  
+// });
