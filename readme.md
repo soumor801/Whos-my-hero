@@ -39,6 +39,8 @@ Deployed site on Github Pages.
 
 Post-MVP: Moving animations, and posible video.
 
+Pre-loading animation reference: https://blog.avada.io/examples/sphere-loader-immanuel-pandiangan.html
+
 
 ################################################## TIMEFRAME ######################################################
 

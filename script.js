@@ -1,5 +1,7 @@
 //============================ Superhero API call =========================
 
+
+
 let submitButton = document.querySelector(".search-submit");
 submitButton.addEventListener("click", () => {
   console.log("clicked");
@@ -38,6 +40,7 @@ submitButton.addEventListener("click", () => {
       // showSuperHero(superheroArr);
     })
     .catch((err) => {
+      
       console.error(err);
     });
 });
@@ -64,47 +67,25 @@ const showSuperHero = (superHeroData) => {
   document.querySelector(
     ".superhero-stats"
   ).innerText = `${superHeroData.work.occupation}`;
+  
+ 
+
 };
 // ===========================================================
 
-function prop(min, max) {
-  var rand = Math.floor(Math.random() * (max - min + 1)) + min;
-  return rand = rand+"%";
-}
-
-function spawnSphere() {
-  var top = prop(30, 70);
-  var left = prop(30, 70);
-  console.log(top, left);
-  var $sphere = '<div class="sphere"></div>';
-  $("body").append( $sphere ).find(".sphere:last").animate({
-    top: top,
-    left: left,
-    opacity: 0
-  }, 4000, function(){
-    $("body").find(".sphere:first").remove();
-  });
-}
-
-setInterval("spawnSphere()", 500);
-// let stop = setInterval("spawnSphere()", 500);
-
-
-
-
-// function stopLoad() {
-//   clearInterval(stop)
-
-// }
-// setTimeout(() => {
-//   stopLoad();
-// },1000);
-
 
 
 // setTimeout(() => {
-//   document.querySelector('.sphere').style.display = 'none'
+//   document.querySelector('.blip').style.display = 'none'
+//   $(window).load(function () {
+//     $(".blip").fadeOut("slow");  
+//   });
+  // document.querySelector('.sphere').style.display = 'hidden'
+  // document.querySelector('.blip:after').style.display = 'hidden'
 // }, 1000)
-// $(window).load(function () {
-//   $(".blip").fadeOut("slow");  
-// });
+
+
+
+
+
+

@@ -1,74 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Who's My Hero?</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <script src="script.js" defer></script>
-  <script>
-    $(window).on('load', function() {      
-  $(".blip").fadeOut(1500);  
-  $('.content').fadeIn(1000)
-});
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  </script>
-  
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>Who's My Hero?</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+ 
 
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  
+  <div id="loader"></div>
+  <div id="content">
+    <script>
+      var preloader = document.getElementById('loader');
+      window.addEventListener('load', function () {
+        setTimeout(function() { 
+          preloader.style.display = 'none';}, 2000) ; 
+          
+          
+        
+})
+      function preLoaderHandler(){
+          }
+    </script>
   <header class="header">
     <h1 class="hero-heading">Who's My Superhero?</h1>
-    <h2 class='subhead'>learn more about your favorite Superhero!</h2>  
-  </header> 
+    <h2 class="subhead">learn more about your favorite Superhero!</h2>
+  </header>
 
-  
   <body>
-    <div class="content">
-    <div class="blip"  id="loader-wrapper">
-    </div>
-
-  <div class="container">
-    <input class="search-input" placeholder="Search your Superhero.">
-    <button class="search-submit" type="submit">Search</button>
-  
-
-  
-  </div>
-  <h2 class="superhero-name"></h2>
-  <img class="superhero-img">
-  <div id="superhero-body"></div>
     
     
       
-    
-    
-    <p class="superhero-p"></p>
 
+      <div class="container">
+        <input class="search-input" placeholder="Search your Superhero." />
+        <button class="search-submit" type="submit">Search</button>
+      </div>
+      <h2 class="superhero-name"></h2>
+      <img class="superhero-img" />
+      <div id="superhero-body"></div>
 
-    <p class="superhero-stats">
+      <p class="superhero-p"></p>
 
-    </p>
+      <p class="superhero-stats"></p>
     
-    
-      
-    
-    
-  </div>
-</body>
-
-<footer class="footer">
+  </body>
   
-  
-  <img src="/Users/ejsoum/Desktop/general_assembly/paw_paw/unit_1/project_1/we-are-hiring-superheroes-11563269310lqcmcamkmv-removebg-preview.png" class='super' alt="">
-  <P>Designed By Elhadj Soumahoro.</P>
-  
-</footer>
 
+  <footer class="footer">
+    <img
+      src="/Users/ejsoum/Desktop/general_assembly/paw_paw/unit_1/project_1/we-are-hiring-superheroes-11563269310lqcmcamkmv-removebg-preview.png"
+      class="super"
+      alt=""
+    />
+    <p>Designed By Elhadj Soumahoro.</p>
+  </footer>
 </html>

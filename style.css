@@ -15,7 +15,7 @@ html {
 }
 
 body{
-  height: ;
+  /* height: ; */
 }
 
 
@@ -176,88 +176,13 @@ background-color: #007e9abf;
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 
-
-.blip {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 16px;
-  width: 16px;
-  border: solid 2px cyan;
-  border-radius: 100%;
-  
-}
-.blip:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 6px;
-  width: 6px;
-  background: cyan;
-  border-radius: 100%;
-  box-shadow: 0 0 14px 4px cyan;
-  -webkit-animation: beat 4s infinite;
-          animation: beat 4s infinite;
-}
-.sphere {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 4px;
-  width: 4px;
-  background: #007E9A;
-  border-radius: 100%;
-  box-shadow: 0 0 10px 4px #007E9A;
-  -webkit-animation: beat 1s infinite;
-          animation: beat 1s infinite;
-}
-@-webkit-keyframes beat {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1.6);
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-@keyframes beat {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1.6);
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-@-webkit-keyframes move {
-  0% {
-    top: 50%;
-    left: 50%;
-    opacity: 1;
-  }
-  100% {
-    top: 40%;
-    left: 50%;
-    opacity: 0;
-  }
-}
-@keyframes move {
-  0% {
-    top: 50%;
-    left: 50%;
-    opacity: 1;
-  }
-  100% {
-    top: 40%;
-    left: 50%;
-    opacity: 0;
-  }
+#loader{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+  top: 0;
+  left:  0;
+	background: #000000 url('https://i.gifer.com/SVKl.gif') no-repeat center;
+	z-index: 999;
+  margin: 0;
 }
