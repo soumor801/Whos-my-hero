@@ -37,7 +37,7 @@ Deployed site on Github Pages.
 
 
 
-Post-MVP: Moving animations, and video.
+Post-MVP: Moving animations, and posible video.
 
 
 ################################################## TIMEFRAME ######################################################

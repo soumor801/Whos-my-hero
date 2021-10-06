@@ -168,6 +168,7 @@ background-color: #007e9abf;
 .header {font-size: 10px;}
 .hero-heading {font-size: 27px;}
 .subhead {font-size: 16px; align-content: center;}
+.superhero-p, .superhero-stats,#superhero-body {font-size: 18px;}
 .hero-heading {margin: 15px 0 0 0;}
 .superhero-img { height: 350px;}
   }
