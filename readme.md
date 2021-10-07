@@ -117,6 +117,34 @@ Actual Time Total:
 
 
 
+Who’s My Superhero Presentation
+
+What is WMSH?:
+
+Who’s My Superhero is a industry leading superhero search engine for all things superhero, learning about the names, group affiliations, and everyday occupations of the leaders who save the world from destruction.
+
+
+Who is this web application for?:
+
+This web application is for the superhero fanatic that wants a stronger knowledge and background understanding of the type of group affiliations and everyday occupations their favorite superhero comes from.
+
+Why would you use WMSH?:
+
+Who’s my superhero provides detailed information on your favorite superhero, allowing you to expand your knowledge and gain new insight behind the lives of your favorite superhero.
+How do you use WMSH?:
+WMSH is super simple to use, start with the name of your favorite superhero, hit the search button and we handle the rest! Populating the full name, group affiliations and any occupations that your hero has outside of saving the world!
+
+( can I have a volunteer to look up their favorite superhero?)
+
+Some of the major challenges that I faced with and how I overcame them:
+
+One of the challenges I faced creating this web app was adding a preloading animation to the screen. I found an animation that was a perfect fit for the theme of the website, however we couldn't get it to function as a preloader, so to overcome this we decided to use a simpler method using a gif and creating an on load function to achieve the preloading effect. 
+
+
+Code snippet that im proud of and why:
+
+A code snippet that I'm proud of is my floating hero. It was a simple animation that adds to the feel of the website, adding the bow on top for this superhero web application.
+
 
 
 
