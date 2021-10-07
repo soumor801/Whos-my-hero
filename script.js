@@ -27,7 +27,7 @@ submitButton.addEventListener("click", () => {
       showSuperHero(superHeroJSON);
     })
     .catch((err) => {
-      alert('Hmmm...Are you sure you typed that hero correctly? Try entering a different hero!');
+      alert('Hmmm...Are you sure you typed that hero correctly? Try entering a different hero!' );
     });
 });
 
