@@ -2,11 +2,11 @@
 
 let submitButton = document.querySelector(".search-submit");
 submitButton.addEventListener("click", () => {
-  console.log("clicked");
+
   let imgSuper = document.querySelector(".super");
 
   let superheroName = document.querySelector(".search-input").value;
-  console.log(superheroName);
+  
 
   document.querySelector(".search-input").value = "";
 
@@ -22,7 +22,6 @@ submitButton.addEventListener("click", () => {
     })
 
     .then((superHeroJSON) => {
-      console.log(superHeroJSON);
       let superHero = superHeroJSON;
       showSuperHero(superHeroJSON);
     })
@@ -32,19 +31,16 @@ submitButton.addEventListener("click", () => {
 });
 // ======================= load superhero and append to the page ====
 const showSuperHero = (superHeroData) => {
-  console.log(superHeroData);
+
 
   document.querySelector(".superhero-name").innerText = `${superHeroData.name}`;
-  console.log(superHeroData);
 
   document.querySelector(
     "#superhero-body"
   ).innerText = `${superHeroData.biography.fullName}`;
-  console.log(superHeroData);
 
   document.querySelector(".superhero-img").src = superHeroData.images.lg;
 
-  console.log(superHeroData.images.md);
 
   document.querySelector(
     ".superhero-p"
