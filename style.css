@@ -189,6 +189,7 @@ p {
   background: #000000 url("https://i.gifer.com/SVKl.gif") no-repeat center;
   z-index: 999;
   margin: 0;
+  overflow: hidden;
 }
 .footer p {
   font-family: Share Tech Mono;
