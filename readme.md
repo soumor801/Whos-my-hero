@@ -134,7 +134,6 @@ Who’s my superhero provides detailed information on your favorite superhero, a
 How do you use WMSH?:
 WMSH is super simple to use, start with the name of your favorite superhero, hit the search button and we handle the rest! Populating the full name, group affiliations and any occupations that your hero has outside of saving the world!
 
-( can I have a volunteer to look up their favorite superhero?)
 
 Some of the major challenges that I faced with and how I overcame them:
 
