@@ -6,7 +6,6 @@ submitButton.addEventListener("click", () => {
   let imgSuper = document.querySelector(".super");
 
   let superheroName = document.querySelector(".search-input").value;
-  
 
   document.querySelector(".search-input").value = "";
 
