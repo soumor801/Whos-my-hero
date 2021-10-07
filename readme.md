@@ -47,7 +47,7 @@ Pre-loading animation reference: https://gifer.com/en/SVKl
 
 Component: Pseudocode Javascript
 Estimated Time: 2 HR
-Time Invested:
+Time Invested: 4 HR
 
 
 
@@ -56,7 +56,7 @@ Time Invested:
 
 Component: HTML and Javascript Structure
 Estimated Time: 3 HR
-Time Invested:
+Time Invested: 3 HR
 
 
 
@@ -66,8 +66,8 @@ Time Invested:
 
 
 Component: Adding clickable buttons and Event Listeners
-Estimated Time:  3HR
-Time Invested:
+Estimated Time:  3 HR
+Time Invested: 2 HR
 
 
 
@@ -75,7 +75,7 @@ Time Invested:
 
 
 Component: Styling page with CSS
-Estimated Time:  6HR
+Estimated Time:  6 HR
 Time Invested:
 
 
