@@ -8,7 +8,6 @@
     <title>Who's My Hero?</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="script.js" defer></script>
- 
 
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,43 +18,34 @@
     />
   </head>
   <div id="loader"></div>
-  
-    <script>
-      var preloader = document.getElementById('loader');
-      window.addEventListener('load', function () {
-        setTimeout(function() { 
-          preloader.style.display = 'none';}, 1750) ; 
-          
-          
-        
-})
-      function preLoaderHandler(){
-          }
-    </script>
+
+  <script>
+    var preloader = document.getElementById("loader");
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        preloader.style.display = "none";
+      }, 1750);
+    });
+    function preLoaderHandler() {}
+  </script>
   <header class="header">
     <h1 class="hero-heading">Who's My Superhero?</h1>
     <h2 class="subhead">learn more about your favorite Superhero!</h2>
   </header>
 
   <body>
-    
-    
-      
+    <div class="container">
+      <input class="search-input" placeholder="Search your Superhero." />
+      <button class="search-submit" type="submit">Search</button>
+    </div>
+    <h2 class="superhero-name"></h2>
+    <img class="superhero-img" />
+    <div id="superhero-body"></div>
 
-      <div class="container">
-        <input class="search-input" placeholder="Search your Superhero." />
-        <button class="search-submit" type="submit">Search</button>
-      </div>
-      <h2 class="superhero-name"></h2>
-      <img class="superhero-img" />
-      <div id="superhero-body"></div>
+    <p class="superhero-p"></p>
 
-      <p class="superhero-p"></p>
-
-      <p class="superhero-stats"></p>
-    
+    <p class="superhero-stats"></p>
   </body>
-  
 
   <footer class="footer">
     <img

@@ -1,7 +1,5 @@
 //============================ Superhero API call =========================
 
-
-
 let submitButton = document.querySelector(".search-submit");
 submitButton.addEventListener("click", () => {
   console.log("clicked");
@@ -26,22 +24,10 @@ submitButton.addEventListener("click", () => {
     .then((superHeroJSON) => {
       console.log(superHeroJSON);
       let superHero = superHeroJSON;
-
-      // superheroArr = Object.entries(superHero);
-      // superheroStats = Object.entries(superHero.powerstats)
-      // superheroBio = Object.entries(superHero.biography)
       showSuperHero(superHeroJSON);
-      // superheroImg = Object.entries(superHero.images.md)
-      // for (let i = 0; len = superheroArr.length; i < len i++) {
-      //   for (info in superheroArr[i])
-      // }
-      // console.log(superheroArr)
-
-      // showSuperHero(superheroArr);
     })
     .catch((err) => {
-      
-      console.error(err);
+      alert('Hmmm...Are you sure you typed that hero correctly? Try entering a different hero!');
     });
 });
 
@@ -67,25 +53,14 @@ const showSuperHero = (superHeroData) => {
   document.querySelector(
     ".superhero-stats"
   ).innerText = `${superHeroData.work.occupation}`;
-  
- 
-
 };
 // ===========================================================
-
-
 
 // setTimeout(() => {
 //   document.querySelector('.blip').style.display = 'none'
 //   $(window).load(function () {
-//     $(".blip").fadeOut("slow");  
+//     $(".blip").fadeOut("slow");
 //   });
-  // document.querySelector('.sphere').style.display = 'hidden'
-  // document.querySelector('.blip:after').style.display = 'hidden'
+// document.querySelector('.sphere').style.display = 'hidden'
+// document.querySelector('.blip:after').style.display = 'hidden'
 // }, 1000)
-
-
-
-
-
-
