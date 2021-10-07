@@ -11,7 +11,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
 }
 
 .header {
@@ -199,7 +199,4 @@ p {
   height: 100%;
   margin: 5px auto;
   
-}
-footer {
-  background-color: #015e72;
 }
