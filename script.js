@@ -33,20 +33,20 @@ submitButton.addEventListener("click", () => {
 const showSuperHero = (superHeroData) => {
 
 
-  document.querySelector(".superhero-name").innerText = `${superHeroData.name}`;
+  document.querySelector(".superhero-name").innerText = `  ${superHeroData.name}`;
 
   document.querySelector(
     "#superhero-body"
-  ).innerText = `${superHeroData.biography.fullName}`;
+  ).innerText = `Full Name: ${superHeroData.biography.fullName}`;
 
   document.querySelector(".superhero-img").src = superHeroData.images.lg;
 
 
   document.querySelector(
     ".superhero-p"
-  ).innerText = `${superHeroData.connections.groupAffiliation}`;
+  ).innerText = `Group Affiliations: ${superHeroData.connections.groupAffiliation}`;
 
   document.querySelector(
     ".superhero-stats"
-  ).innerText = `${superHeroData.work.occupation}`;
+  ).innerText = ` Occupation: ${superHeroData.work.occupation}`;
 };

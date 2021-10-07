@@ -184,6 +184,8 @@ p {
   height: 100%;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   background: #000000 url("https://i.gifer.com/SVKl.gif") no-repeat center;
   z-index: 999;
   margin: 0;
@@ -196,4 +198,8 @@ p {
   flex-direction: column-reverse;
   height: 100%;
   margin: 5px auto;
+  
+}
+footer {
+  background-color: #015e72;
 }
