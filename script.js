@@ -30,7 +30,7 @@ submitButton.addEventListener("click", () => {
       alert('Hmmm...Are you sure you typed that hero correctly? Try entering a different hero!' );
     });
 });
-
+// ======================= load superhero and append to the page ====
 const showSuperHero = (superHeroData) => {
   console.log(superHeroData);
 
@@ -54,13 +54,3 @@ const showSuperHero = (superHeroData) => {
     ".superhero-stats"
   ).innerText = `${superHeroData.work.occupation}`;
 };
-// ===========================================================
-
-// setTimeout(() => {
-//   document.querySelector('.blip').style.display = 'none'
-//   $(window).load(function () {
-//     $(".blip").fadeOut("slow");
-//   });
-// document.querySelector('.sphere').style.display = 'hidden'
-// document.querySelector('.blip:after').style.display = 'hidden'
-// }, 1000)
