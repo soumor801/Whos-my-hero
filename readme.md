@@ -76,7 +76,7 @@ Time Invested: 2 HR
 
 Component: Styling page with CSS
 Estimated Time:  6 HR
-Time Invested:
+Time Invested: 7 HR
 
 
 
@@ -84,8 +84,8 @@ Time Invested:
 
 
 Component: Pulling Appropriate data from API
-Estimated Time: 4HR
-Time Invested:
+Estimated Time: 4 HR
+Time Invested: 4 HR
 
 
 
@@ -94,16 +94,16 @@ Time Invested:
 
 
 Component: Setting and Styling Media Queries
-Estimated Time: 4HR
-Time Invested:
+Estimated Time: 4 HR
+Time Invested: 4 HR
 
 
 
 
 
 Component: Functionality
-Estimated Time: 10HR
-Time Invested:
+Estimated Time: 10 HR
+Time Invested: 10 HR
 
 
 
@@ -117,7 +117,7 @@ Actual Time Total:
 
 
 
-Who’s My Superhero Presentation
+                Who’s My Superhero Presentation
 
 What is WMSH?:
 
